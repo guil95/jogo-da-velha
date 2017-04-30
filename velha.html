@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Jogo da Velha</title>
+<style>
+td {
+    border: 1px solid #ccc;
+    font-size: 4em;
+    padding: 15px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+    width: 100px;
+    height: 100px;
+}
+table {
+    border-collapse: collapse;
+    margin:auto;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.center{
+	text-align: center;
+	font-family: sans-serif;
+}
+.X{
+	color: green;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+.O{
+	color: blue;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/velha.js">
+</script>
+</head>
+<body>
+<div id="venceX"></div>
+<div id="venceO"></div>
+<div id="empate"></div>
+<h1 class="center">Jogo da velha</h1>
+<table cellspacing="0" cellpadding="0" id="t1">
+<tr><td>X</td><td>O</td><td>X</td></tr>
+<tr><td>O</td><td>X</td><td>O</td></tr>
+<tr><td>X</td><td>O</td><td>X</td></tr>
+</table>
+<div id="opcoes">
+<label>Aleatório</label>
+<input type="radio" name="selecao" value="1" class="selecao"><br>
+<label>'X' Começa</label>
+<input type="radio" name="selecao" value="X" class="selecao"><br>
+<label>'O' Começa</label>
+<input type="radio" name="selecao" value="O" class="selecao"><br>
+<button id="limparCampos">Novo Jogo</button>
+
+</div>
+</body>
+</html>
